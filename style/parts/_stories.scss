@@ -1,0 +1,113 @@
+.stories {
+	h3 {
+		font-size: 2rem;
+		margin-top: 2.8rem;
+		margin-bottom: 1.2rem;
+		text-align: center;
+	}
+	& > p {
+		margin: 0 auto;
+		text-align: center;
+		max-width: 41.5rem;
+		line-height: 1.4rem;
+	}
+	&-btn {
+		display: flex;
+		justify-content: center;
+		margin-top: 1.6rem;
+		.btn {
+			@include button($gap, 2.8rem, #212a2f, #495155);
+		}
+	}
+	h2 {
+		margin-top: 7.5rem;
+		font-size: 2rem;
+	}
+	&-card {
+		display: flex;
+		column-gap: 1.5rem;
+		margin-top: 1.5rem;
+		&__item {
+			h5 {
+				font-size: 1.4rem;
+				margin-top: 1rem;
+			}
+			p {
+				max-width: 21rem;
+				margin-top: .8rem;
+				line-height: 1.4rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 1250px) {
+	.stories {
+		h2 {
+			display: flex;
+			justify-content: center;
+			margin-bottom: $gap;
+			border-bottom: solid 1px #000;
+		}
+		&-card {
+			display: flex;
+			justify-content: center;
+			margin: 0 auto;
+			&__item {
+				img {
+					width: 340px;
+				}
+			}
+		}
+	}
+	@media (max-width: 1080px) {
+		.stories {
+			&-card {
+				display: flex;
+				justify-content: center;
+				margin: 0 auto;
+				&__item {
+					img {
+						width: 300px;
+					}
+					p {
+						max-width: 18rem;
+					}
+				}
+			}
+		}
+		@media (max-width: 964px) {
+			.stories {
+				&-card {
+					display: flex;
+					flex-direction: column;
+					&__item {
+						margin: 0 auto;
+						img {
+							width: 500px;
+						}
+						h5 {
+							text-align: center;
+							padding-bottom: $gap;
+						}
+						p {
+							margin: 0 auto 8rem;
+							text-align: center;
+						}
+					}
+				}
+			}
+			@media (max-width: 505px) {
+				.stories {
+					&-card {
+						&__item {
+							img {
+								width: 340px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

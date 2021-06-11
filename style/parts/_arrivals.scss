@@ -1,0 +1,71 @@
+.arrivals {
+	h3 {
+		margin-top: 2.8rem;
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 400;
+	}
+	p {
+		margin-top: 1.3rem;
+		text-align: center;
+	}
+	&-btn {
+		margin-top: 1.3rem;
+		display: flex;
+		justify-content: center;
+		.btn {
+			@include button($gap, 2.8rem, #212a2f, #495155);
+		}
+	}
+	&-slider {
+		h2 {
+			margin-top: 7.5rem;
+			font-size: 2rem;
+			margin-left: $half-gap;
+		}
+		.slider {
+			padding-left: $gap;
+			padding-right: $gap;
+			margin-top: 1.5rem;
+			&-item {
+				.img {
+					position: relative;
+					&:hover .overlay {
+						opacity: 1;
+					}
+				}
+				.overlay {
+					transition: .3s ease;
+					position: absolute;
+					top: 45%;
+					left: 25%;
+					opacity: 0;
+					.btn {
+						@include button($gap, 2.8rem, #212a2f, #495155);
+					}
+				}
+				h4 {
+					font-size: 1.5rem;
+					margin-top: 1rem;
+				}
+			}
+			.owl-dots {
+				display: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.category {
+		&-slider {
+			.slider {
+				&-item {
+					.overlay {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

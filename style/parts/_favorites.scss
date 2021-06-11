@@ -1,0 +1,237 @@
+.favorites {
+	h2 {
+		font-size: 2rem;
+		text-transform: capitalize;
+		letter-spacing: 1px;
+		text-align: center;
+		margin-top: 7.5rem;
+	}
+	&-menu {
+		&__nav {
+			margin-top: 2rem;
+			display: flex;
+			justify-content: center;
+			.nav-item {
+				text-transform: uppercase;
+				margin-left: 2.125rem;
+				margin-right: 2.125rem;
+				letter-spacing: 2px;
+				padding: 0 2rem;
+				cursor: pointer;
+			}
+			.nav-item.active {
+				border-bottom: 2px solid #000;
+			}
+		}
+	}
+	&-card {
+		&__shoes {
+			display: flex;
+			column-gap: 1.5rem;
+		}
+		&__apparel {
+			display: none;
+			column-gap: 1.5rem;
+		}
+		&__item {
+			.img {
+				margin-top: 2rem;
+				position: relative;
+				&:hover .overlay{
+					opacity: 1;
+					overflow: visible;
+					transform: scaleX(1);
+					button {
+						cursor: pointer;
+					}
+				}
+			}
+			.overlay {
+				transition: .3s ease;
+				transform: scaleX(0);
+				position: absolute;
+				top: 35%;
+				left: 15%;
+				opacity: 0;
+				overflow: hidden;
+				cursor: default;
+				.btn {
+					@include button($gap, 5.8rem, #fff, #ddd, #000);
+					margin-bottom: 0.75rem;
+				}
+				.btn-women {
+					@include button($gap, 4.8rem, #fff, #ddd, #000);
+				}
+			}
+		}
+		&__item.apparel {
+			opacity: 1;
+			overflow: hidden;
+		}
+		&__item.basics {
+			opacity: 0;
+			overflow: hidden;
+		}
+		&__description {
+			width: 21rem;
+			margin: 1rem auto;
+			h3 {
+				font-size: 1.5rem;
+				text-transform: capitalize;
+				margin-bottom: 1rem;
+			}
+			.shoes-description {
+				display: flex;
+				align-items: center;
+				margin-top: 1rem;
+				p {
+					margin-left: 0.75rem;
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1250px) {
+	.favorites {
+		&-card {
+			display: flex;
+			justify-content: center;
+			&__item {
+				.img {
+					img {
+						width: 340px;
+					}
+					.overlay {
+						opacity: 1;
+						overflow: visible;
+						transform: scaleX(1);
+						left: 8%;
+						top: 60%;
+						.btn {
+							@include button($gap, 5.8rem, rgba(255,255,255,.7), #ddd, #000);
+							margin-bottom: 0.75rem;
+						}
+						.btn-women {
+							@include button($gap, 4.8rem, rgba(255,255,255,.7), #ddd, #000);
+						}
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 1080px) {
+		.favorites {
+			&-card {
+				display: flex;
+				justify-content: center;
+				&__item {
+					.img {
+						img {
+							width: 300px;
+						}
+						.overlay {
+							opacity: 1;
+							overflow: visible;
+							transform: scaleX(1);
+							left: 13%;
+							top: 60%;
+							.btn {
+								@include button($gap, 3.8rem, rgba(255,255,255,.7), #ddd, #000);
+								margin-bottom: 0.75rem;
+							}
+							.btn-women {
+								@include button($gap, 2.8rem, rgba(255,255,255,.7), #ddd, #000);
+							}
+						}
+					}
+				}
+				&__description {
+					width: 15rem;
+					margin: 0;
+				}
+			}
+		}
+		@media (max-width: 964px) {
+			.favorites {
+				&-card {
+					&__shoes {
+						display: flex;
+						flex-direction: column;
+					}
+					&__item {
+						.img {
+							img {
+								width: 500px;
+							}
+							.overlay {
+								opacity: 1;
+								overflow: visible;
+								transform: scaleX(1);
+								left: 16%;
+								top: 70%;
+								.btn {
+									@include button($gap, 7.8rem, rgba(255,255,255,.7), #ddd, #000);
+									margin-bottom: 0.75rem;
+								}
+								.btn-women {
+									@include button($gap, 6.8rem, rgba(255,255,255,.7), #ddd, #000);
+								}
+							}
+						}
+					}
+					&__description {
+						margin:  1rem auto 10rem;
+						width: 28rem;
+
+					}
+				}
+			}
+			@media (max-width: 505px) {
+				.favorites {
+					&-menu {
+						&__nav {
+							.nav-item {
+								margin-left: $half-gap;
+								margin-right: $half-gap;
+								padding: 0 $half-gap;
+							}
+						}
+					}
+					&-card {
+						display: flex;
+						justify-content: center;
+						&__item {
+							.img {
+								img {
+									width: 340px;
+								}
+								.overlay {
+									opacity: 1;
+									overflow: visible;
+									transform: scaleX(1);
+									left: 8%;
+									top: 60%;
+									.btn {
+										@include button($gap, 5.8rem, rgba(255,255,255,.7), #ddd, #000);
+										margin-bottom: 0.75rem;
+									}
+									.btn-women {
+										@include button($gap, 4.8rem, rgba(255,255,255,.7), #ddd, #000);
+									}
+								}
+							}
+						}
+						&__description {
+							margin:  1rem auto 10rem;
+							width: 15rem;
+
+						}
+					}
+				}
+			}
+		}
+	}
+}

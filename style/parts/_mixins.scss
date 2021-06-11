@@ -1,0 +1,15 @@
+@mixin button($size1: 1rem, $size2: 2rem, $color1: #ffffff, $color2: #ddd, $color3: #fff) {
+  user-select: none;
+  color: $color3;
+  background: $color1;
+  padding: $size1 $size2;
+  outline: none;
+  border: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .3s ease;
+  &:hover {
+    background: $color2;
+  }
+}

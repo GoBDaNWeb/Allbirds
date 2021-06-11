@@ -1,0 +1,36 @@
+.hero {
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 52rem;
+  h1 {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-top: 20rem;
+  }
+  p {
+    margin-top: 0.75rem;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  &-btn {
+    margin-top: 12.8rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    .btn {
+      @include button($gap, 2.8rem, #fff, #ddd, #000);
+      margin-right: 1rem;
+    }
+    .btn-women {
+      @include button($gap, 1.8rem, #fff, #ddd, #000);
+    }
+  }
+}
+
+
