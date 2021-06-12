@@ -25,29 +25,34 @@
 		}
 	}
 	&-card {
+		display: flex;
+		overflow: hidden;
 		&__shoes {
-			display: none;
-			transition: $transition;
+			display: flex;
+			transition: .8s ease;
 			column-gap: $gap + 0.5rem;
+			transform: translateX(-1300px);
 		}
 		&__shoes.active {
-			display: flex;
+			transform: translateX(0);
 		}
 		&__apparel {
-			display: none;
+			transform: translateX(-3238px);
+			display: flex;
 			column-gap: $gap + 0.5rem;
-			transition: $transition;
+			transition: .8s ease;
 		}
 		&__apparel.active {
-			display: flex;
+			transform: translateX(-1238px);
 		}
 		&__basics {
-			display: none;
+			transform: translateX(-4300px);
+			display: flex;
 			column-gap: $gap + 0.5rem;
-			transition: $transition;
+			transition: .8s ease;
 		}
 		&__basics.active {
-			display: flex;
+			transform: translateX(-2471px);
 		}
 		&__item {
 			.img {
@@ -107,6 +112,34 @@
 		&-card {
 			display: flex;
 			justify-content: center;
+			overflow: hidden;
+			&__shoes {
+				display: flex;
+				transition: .8s ease;
+				column-gap: $gap + 0.5rem;
+				transform: translateX(-100px);
+			}
+			&__shoes.active {
+				transform: translateX(1069px);
+			}
+			&__apparel {
+				transform: translateX(-1250px);
+				display: flex;
+				column-gap: $gap + 0.5rem;
+				transition: .8s ease;
+			}
+			&__apparel.active {
+				transform: translateX(0);
+			}
+			&__basics {
+				transform: translateX(-2269px);
+				display: flex;
+				column-gap: $gap + 0.5rem;
+				transition: .8s ease;
+			}
+			&__basics.active {
+				transform: translateX(-1069px);
+			}
 			&__item {
 				.img {
 					img {
@@ -135,6 +168,34 @@
 			&-card {
 				display: flex;
 				justify-content: center;
+				overflow: hidden;
+				&__shoes {
+					display: flex;
+					transition: .8s ease;
+					column-gap: $gap + 0.5rem;
+					transform: translateX(-100px);
+				}
+				&__shoes.active {
+					transform: translateX(949px);
+				}
+				&__apparel {
+					transform: translateX(-1250px);
+					display: flex;
+					column-gap: $gap + 0.5rem;
+					transition: .8s ease;
+				}
+				&__apparel.active {
+					transform: translateX(0);
+				}
+				&__basics {
+					transform: translateX(-2269px);
+					display: flex;
+					column-gap: $gap + 0.5rem;
+					transition: .8s ease;
+				}
+				&__basics.active {
+					transform: translateX(-949px);
+				}
 				&__item {
 					.img {
 						img {
@@ -165,8 +226,38 @@
 		@media (max-width: 964px) {
 			.favorites {
 				&-card {
+					display: flex;
+					justify-content: center;
+					overflow: hidden;
 					&__shoes {
+						display: flex;
 						flex-direction: column;
+						transition: .8s ease;
+						column-gap: $gap + 0.5rem;
+						transform: translateX(-400px);
+					}
+					&__shoes.active {
+						transform: translateX(500px);
+					}
+					&__apparel {
+						transform: translateX(-1250px);
+						display: flex;
+						flex-direction: column;
+						column-gap: $gap + 0.5rem;
+						transition: .8s ease;
+					}
+					&__apparel.active {
+						transform: translateX(0);
+					}
+					&__basics {
+						transform: translateX(-2269px);
+						display: flex;
+						flex-direction: column;
+						column-gap: $gap + 0.5rem;
+						transition: .8s ease;
+					}
+					&__basics.active {
+						transform: translateX(-500px);
 					}
 					&__item {
 						.img {
@@ -216,6 +307,37 @@
 					&-card {
 						display: flex;
 						justify-content: center;
+						overflow: hidden;
+						&__shoes {
+							display: flex;
+							flex-direction: column;
+							transition: .8s ease;
+							column-gap: $gap + 0.5rem;
+							transform: translateX(-400px);
+						}
+						&__shoes.active {
+							transform: translateX(340px);
+						}
+						&__apparel {
+							transform: translateX(-1250px);
+							display: flex;
+							flex-direction: column;
+							column-gap: $gap + 0.5rem;
+							transition: .8s ease;
+						}
+						&__apparel.active {
+							transform: translateX(0);
+						}
+						&__basics {
+							transform: translateX(-2269px);
+							display: flex;
+							flex-direction: column;
+							column-gap: $gap + 0.5rem;
+							transition: .8s ease;
+						}
+						&__basics.active {
+							transform: translateX(-340px);
+						}
 						&__item {
 							.img {
 								img {
