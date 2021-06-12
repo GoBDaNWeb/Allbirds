@@ -31,28 +31,34 @@
 			display: flex;
 			transition: .8s ease;
 			column-gap: $gap + 0.5rem;
-			transform: translateX(-1300px);
+			transform: translateX(-1240px);
+			z-index: 1;
 		}
 		&__shoes.active {
 			transform: translateX(0);
+			z-index: 2;
 		}
 		&__apparel {
-			transform: translateX(-3238px);
 			display: flex;
+			transform: translateX(-2475px);
 			column-gap: $gap + 0.5rem;
 			transition: .8s ease;
+			z-index: 1;
 		}
 		&__apparel.active {
 			transform: translateX(-1238px);
+			z-index: 2;
 		}
 		&__basics {
-			transform: translateX(-4300px);
+			transform: translateX(-3710px);
 			display: flex;
 			column-gap: $gap + 0.5rem;
 			transition: .8s ease;
+			z-index: 1;
 		}
 		&__basics.active {
 			transform: translateX(-2471px);
+			z-index: 2;
 		}
 		&__item {
 			.img {
@@ -117,28 +123,34 @@
 				display: flex;
 				transition: .8s ease;
 				column-gap: $gap + 0.5rem;
-				transform: translateX(-100px);
+				transform: translateX(-90px);
+				z-index: 1;
 			}
 			&__shoes.active {
 				transform: translateX(1069px);
+				z-index: 2;
 			}
 			&__apparel {
-				transform: translateX(-1250px);
+				transform: translateX(-1155px);
 				display: flex;
 				column-gap: $gap + 0.5rem;
 				transition: .8s ease;
+				z-index: 1;
 			}
 			&__apparel.active {
 				transform: translateX(0);
+				z-index: 2;
 			}
 			&__basics {
-				transform: translateX(-2269px);
+				transform: translateX(-2220px);
 				display: flex;
 				column-gap: $gap + 0.5rem;
 				transition: .8s ease;
+				z-index: 1;
 			}
 			&__basics.active {
 				transform: translateX(-1069px);
+				z-index: 2;
 			}
 			&__item {
 				.img {
@@ -173,28 +185,34 @@
 					display: flex;
 					transition: .8s ease;
 					column-gap: $gap + 0.5rem;
-					transform: translateX(-100px);
+					transform: translateX(-60px);
+					z-index: 1;
 				}
 				&__shoes.active {
 					transform: translateX(949px);
+					z-index: 2;
 				}
 				&__apparel {
-					transform: translateX(-1250px);
+					transform: translateX(-1005px);
 					display: flex;
 					column-gap: $gap + 0.5rem;
 					transition: .8s ease;
+					z-index: 1;
 				}
 				&__apparel.active {
 					transform: translateX(0);
+					z-index: 2;
 				}
 				&__basics {
-					transform: translateX(-2269px);
+					transform: translateX(-1960px);
 					display: flex;
 					column-gap: $gap + 0.5rem;
 					transition: .8s ease;
+					z-index: 1;
 				}
 				&__basics.active {
 					transform: translateX(-949px);
+					z-index: 2;
 				}
 				&__item {
 					.img {
@@ -232,32 +250,38 @@
 					&__shoes {
 						display: flex;
 						flex-direction: column;
-						transition: .8s ease;
+						transition: .5s ease;
 						column-gap: $gap + 0.5rem;
-						transform: translateX(-400px);
+						transform: translateX(-300px);
+						z-index: 1;
 					}
 					&__shoes.active {
 						transform: translateX(500px);
+						z-index: 2;
 					}
 					&__apparel {
-						transform: translateX(-1250px);
+						transform: translateX(-850px);
 						display: flex;
 						flex-direction: column;
 						column-gap: $gap + 0.5rem;
-						transition: .8s ease;
+						transition: .5s ease;
+						z-index: 1;
 					}
 					&__apparel.active {
 						transform: translateX(0);
+						z-index: 2;
 					}
 					&__basics {
-						transform: translateX(-2269px);
+						transform: translateX(-1230px);
 						display: flex;
 						flex-direction: column;
 						column-gap: $gap + 0.5rem;
-						transition: .8s ease;
+						transition: .5s ease;
+						z-index: 1;
 					}
 					&__basics.active {
 						transform: translateX(-500px);
+						z-index: 2;
 					}
 					&__item {
 						.img {
@@ -311,32 +335,38 @@
 						&__shoes {
 							display: flex;
 							flex-direction: column;
-							transition: .8s ease;
+							transition: .5s ease;
 							column-gap: $gap + 0.5rem;
-							transform: translateX(-400px);
+							transform: translateX(-100px);
+							z-index: 1;
 						}
 						&__shoes.active {
 							transform: translateX(340px);
+							z-index: 2;
 						}
 						&__apparel {
-							transform: translateX(-1250px);
+							transform: translateX(-450px);
 							display: flex;
 							flex-direction: column;
 							column-gap: $gap + 0.5rem;
-							transition: .8s ease;
+							transition: .5s ease;
+							z-index: 1;
 						}
 						&__apparel.active {
 							transform: translateX(0);
+							z-index: 2;
 						}
 						&__basics {
-							transform: translateX(-2269px);
+							transform: translateX(-760px);
 							display: flex;
 							flex-direction: column;
 							column-gap: $gap + 0.5rem;
-							transition: .8s ease;
+							transition: .5s ease;
+							z-index: 1;
 						}
 						&__basics.active {
 							transform: translateX(-340px);
+							z-index: 2;
 						}
 						&__item {
 							.img {

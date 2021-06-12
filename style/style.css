@@ -177,28 +177,34 @@
   display: flex;
   transition: 0.8s ease;
   column-gap: 1.5rem;
-  transform: translateX(-1300px);
+  transform: translateX(-1240px);
+  z-index: 1;
 }
 .favorites-card__shoes.active {
   transform: translateX(0);
+  z-index: 2;
 }
 .favorites-card__apparel {
-  transform: translateX(-3238px);
   display: flex;
+  transform: translateX(-2475px);
   column-gap: 1.5rem;
   transition: 0.8s ease;
+  z-index: 1;
 }
 .favorites-card__apparel.active {
   transform: translateX(-1238px);
+  z-index: 2;
 }
 .favorites-card__basics {
-  transform: translateX(-4300px);
+  transform: translateX(-3710px);
   display: flex;
   column-gap: 1.5rem;
   transition: 0.8s ease;
+  z-index: 1;
 }
 .favorites-card__basics.active {
   transform: translateX(-2471px);
+  z-index: 2;
 }
 .favorites-card__item .img {
   margin-top: 2rem;
@@ -282,28 +288,34 @@
     display: flex;
     transition: 0.8s ease;
     column-gap: 1.5rem;
-    transform: translateX(-100px);
+    transform: translateX(-90px);
+    z-index: 1;
   }
   .favorites-card__shoes.active {
     transform: translateX(1069px);
+    z-index: 2;
   }
   .favorites-card__apparel {
-    transform: translateX(-1250px);
+    transform: translateX(-1155px);
     display: flex;
     column-gap: 1.5rem;
     transition: 0.8s ease;
+    z-index: 1;
   }
   .favorites-card__apparel.active {
     transform: translateX(0);
+    z-index: 2;
   }
   .favorites-card__basics {
-    transform: translateX(-2269px);
+    transform: translateX(-2220px);
     display: flex;
     column-gap: 1.5rem;
     transition: 0.8s ease;
+    z-index: 1;
   }
   .favorites-card__basics.active {
     transform: translateX(-1069px);
+    z-index: 2;
   }
   .favorites-card__item .img img {
     width: 340px;
@@ -357,28 +369,34 @@
     display: flex;
     transition: 0.8s ease;
     column-gap: 1.5rem;
-    transform: translateX(-100px);
+    transform: translateX(-60px);
+    z-index: 1;
   }
   .favorites-card__shoes.active {
     transform: translateX(949px);
+    z-index: 2;
   }
   .favorites-card__apparel {
-    transform: translateX(-1250px);
+    transform: translateX(-1005px);
     display: flex;
     column-gap: 1.5rem;
     transition: 0.8s ease;
+    z-index: 1;
   }
   .favorites-card__apparel.active {
     transform: translateX(0);
+    z-index: 2;
   }
   .favorites-card__basics {
-    transform: translateX(-2269px);
+    transform: translateX(-1960px);
     display: flex;
     column-gap: 1.5rem;
     transition: 0.8s ease;
+    z-index: 1;
   }
   .favorites-card__basics.active {
     transform: translateX(-949px);
+    z-index: 2;
   }
   .favorites-card__item .img img {
     width: 300px;
@@ -435,32 +453,38 @@
   .favorites-card__shoes {
     display: flex;
     flex-direction: column;
-    transition: 0.8s ease;
+    transition: 0.5s ease;
     column-gap: 1.5rem;
-    transform: translateX(-400px);
+    transform: translateX(-300px);
+    z-index: 1;
   }
   .favorites-card__shoes.active {
     transform: translateX(500px);
+    z-index: 2;
   }
   .favorites-card__apparel {
-    transform: translateX(-1250px);
+    transform: translateX(-850px);
     display: flex;
     flex-direction: column;
     column-gap: 1.5rem;
-    transition: 0.8s ease;
+    transition: 0.5s ease;
+    z-index: 1;
   }
   .favorites-card__apparel.active {
     transform: translateX(0);
+    z-index: 2;
   }
   .favorites-card__basics {
-    transform: translateX(-2269px);
+    transform: translateX(-1230px);
     display: flex;
     flex-direction: column;
     column-gap: 1.5rem;
-    transition: 0.8s ease;
+    transition: 0.5s ease;
+    z-index: 1;
   }
   .favorites-card__basics.active {
     transform: translateX(-500px);
+    z-index: 2;
   }
   .favorites-card__item .img img {
     width: 500px;
@@ -528,32 +552,38 @@
   .favorites-card__shoes {
     display: flex;
     flex-direction: column;
-    transition: 0.8s ease;
+    transition: 0.5s ease;
     column-gap: 1.5rem;
-    transform: translateX(-400px);
+    transform: translateX(-100px);
+    z-index: 1;
   }
   .favorites-card__shoes.active {
     transform: translateX(340px);
+    z-index: 2;
   }
   .favorites-card__apparel {
-    transform: translateX(-1250px);
+    transform: translateX(-450px);
     display: flex;
     flex-direction: column;
     column-gap: 1.5rem;
-    transition: 0.8s ease;
+    transition: 0.5s ease;
+    z-index: 1;
   }
   .favorites-card__apparel.active {
     transform: translateX(0);
+    z-index: 2;
   }
   .favorites-card__basics {
-    transform: translateX(-2269px);
+    transform: translateX(-760px);
     display: flex;
     flex-direction: column;
     column-gap: 1.5rem;
-    transition: 0.8s ease;
+    transition: 0.5s ease;
+    z-index: 1;
   }
   .favorites-card__basics.active {
     transform: translateX(-340px);
+    z-index: 2;
   }
   .favorites-card__item .img img {
     width: 340px;
