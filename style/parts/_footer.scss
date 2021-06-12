@@ -1,18 +1,18 @@
 .footer {
 	background: #212A2F;
-	color: #fff;
+	color: $white;
 	margin-top: 8.3rem;
-	padding: 3.3rem 5rem;
+	padding: 3.3rem $gap * 5;
 	&-input {
 		p {
 			font-size: .85rem;
-			margin-bottom: 1rem;
+			margin-bottom: $gap;
 		}
 		form {
 			input {
 				background: #4D5559;
 				border: none;
-				height: 3rem;
+				height: $gap + $double-gap;
 				width: 18rem;
 				color: #FFFFFF;
 				outline: none;
@@ -25,15 +25,15 @@
 	&-information {
 		display: flex;
 		flex-wrap: wrap;
-		column-gap: 15rem;
-		margin-top: 5rem;
+		column-gap: $gap * 15;
+		margin-top: $gap * 5;
 		h4 {
-			font-size: 1rem;
+			font-size: $gap;
 		}
 		ul {
 			margin-bottom: $double-gap * 2;
 			li {
-				margin-top: 1rem;
+				margin-top: $gap;
 				font-size: .75rem;
 			}
 		}
@@ -42,36 +42,36 @@
 	&-certified {
 		display: flex;
 		flex-wrap: wrap;
-		column-gap: 10rem;
-		margin-top: 5rem;
+		column-gap: $gap * 10;
+		margin-top: $gap * 5;
 		&__item > p {
-			max-width: 18rem;
+			max-width: $gap * 18;
 			font-size: .75rem;
-			line-height: 1.2rem;
+			line-height: $gap + 0.2rem;
 			margin-bottom: .5rem;
 		}
 		&__icon {
 			a {
 				color: #FFFFFF;
 				text-decoration: none;
-				font-size: 1.5rem;
+				font-size: $gap + 0.5rem;
 				margin-right: .5rem;
 			}
 		}
 		&__item  {
 			h4 {
-				margin-bottom: 1rem;
+				margin-bottom: $gap;
 			}
 			img {
-				padding-right: 1.5rem;
-				margin-bottom: 1rem;
+				padding-right: $gap + 0.5rem;
+				margin-bottom: $gap;
 			}
 		}
 	}
 	&-copyright {
 		display: flex;
 		justify-content: center;
-		margin-top: 5rem;
+		margin-top: $gap * 5;
 		p {
 			font-size: .75rem;
 		}
@@ -103,7 +103,7 @@
 			justify-content: center;
 			column-gap: $double-gap * 2;
 			&__item > p {
-				max-width: 10rem;
+				max-width: $gap * 10;
 
 			}
 			&__item.country {

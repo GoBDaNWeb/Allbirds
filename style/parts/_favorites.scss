@@ -1,22 +1,22 @@
 .favorites {
 	h2 {
-		font-size: 2rem;
+		font-size: $double-gap;
 		text-transform: capitalize;
 		letter-spacing: 1px;
 		text-align: center;
-		margin-top: 7.5rem;
+		margin-top: $gap * 7.5;
 	}
 	&-menu {
 		&__nav {
-			margin-top: 2rem;
+			margin-top: $double-gap;
 			display: flex;
 			justify-content: center;
 			.nav-item {
 				text-transform: uppercase;
-				margin-left: 2.125rem;
-				margin-right: 2.125rem;
+				margin-left: $double-gap + 0.125rem;
+				margin-right: $double-gap + 0.125rem;
 				letter-spacing: 2px;
-				padding: 0 2rem;
+				padding: 0 $double-gap;
 				cursor: pointer;
 			}
 			.nav-item.active {
@@ -26,16 +26,32 @@
 	}
 	&-card {
 		&__shoes {
+			display: none;
+			transition: $transition;
+			column-gap: $gap + 0.5rem;
+		}
+		&__shoes.active {
 			display: flex;
-			column-gap: 1.5rem;
 		}
 		&__apparel {
 			display: none;
-			column-gap: 1.5rem;
+			column-gap: $gap + 0.5rem;
+			transition: $transition;
+		}
+		&__apparel.active {
+			display: flex;
+		}
+		&__basics {
+			display: none;
+			column-gap: $gap + 0.5rem;
+			transition: $transition;
+		}
+		&__basics.active {
+			display: flex;
 		}
 		&__item {
 			.img {
-				margin-top: 2rem;
+				margin-top: $double-gap;
 				position: relative;
 				&:hover .overlay{
 					opacity: 1;
@@ -47,7 +63,7 @@
 				}
 			}
 			.overlay {
-				transition: .3s ease;
+				transition: $transition;
 				transform: scaleX(0);
 				position: absolute;
 				top: 35%;
@@ -64,26 +80,18 @@
 				}
 			}
 		}
-		&__item.apparel {
-			opacity: 1;
-			overflow: hidden;
-		}
-		&__item.basics {
-			opacity: 0;
-			overflow: hidden;
-		}
 		&__description {
 			width: 21rem;
-			margin: 1rem auto;
+			margin: $gap auto;
 			h3 {
-				font-size: 1.5rem;
+				font-size: $gap + 0.5rem;
 				text-transform: capitalize;
-				margin-bottom: 1rem;
+				margin-bottom: $gap;
 			}
-			.shoes-description {
+			.description {
 				display: flex;
 				align-items: center;
-				margin-top: 1rem;
+				margin-top: $gap;
 				p {
 					margin-left: 0.75rem;
 					text-transform: capitalize;
@@ -158,7 +166,6 @@
 			.favorites {
 				&-card {
 					&__shoes {
-						display: flex;
 						flex-direction: column;
 					}
 					&__item {
@@ -186,6 +193,12 @@
 						margin:  1rem auto 10rem;
 						width: 28rem;
 
+					}
+					&__apparel {
+						flex-direction: column;
+					}
+					&__basics {
+						flex-direction: column;
 					}
 				}
 			}
@@ -225,9 +238,8 @@
 							}
 						}
 						&__description {
-							margin:  1rem auto 10rem;
+							margin:  1rem auto 1rem;
 							width: 15rem;
-
 						}
 					}
 				}

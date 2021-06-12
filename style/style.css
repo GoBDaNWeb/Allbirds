@@ -170,12 +170,28 @@
   border-bottom: 2px solid #000;
 }
 .favorites-card__shoes {
-  display: flex;
+  display: none;
+  transition: 0.3s ease;
   column-gap: 1.5rem;
+}
+.favorites-card__shoes.active {
+  display: flex;
 }
 .favorites-card__apparel {
   display: none;
   column-gap: 1.5rem;
+  transition: 0.3s ease;
+}
+.favorites-card__apparel.active {
+  display: flex;
+}
+.favorites-card__basics {
+  display: none;
+  column-gap: 1.5rem;
+  transition: 0.3s ease;
+}
+.favorites-card__basics.active {
+  display: flex;
 }
 .favorites-card__item .img {
   margin-top: 2rem;
@@ -230,14 +246,6 @@
 .favorites-card__item .overlay .btn-women:hover {
   background: #ddd;
 }
-.favorites-card__item.apparel {
-  opacity: 1;
-  overflow: hidden;
-}
-.favorites-card__item.basics {
-  opacity: 0;
-  overflow: hidden;
-}
 .favorites-card__description {
   width: 21rem;
   margin: 1rem auto;
@@ -247,12 +255,12 @@
   text-transform: capitalize;
   margin-bottom: 1rem;
 }
-.favorites-card__description .shoes-description {
+.favorites-card__description .description {
   display: flex;
   align-items: center;
   margin-top: 1rem;
 }
-.favorites-card__description .shoes-description p {
+.favorites-card__description .description p {
   margin-left: 0.75rem;
   text-transform: capitalize;
 }
@@ -357,7 +365,6 @@
 }
 @media (max-width: 1250px) and (max-width: 1080px) and (max-width: 964px) {
   .favorites-card__shoes {
-    display: flex;
     flex-direction: column;
   }
   .favorites-card__item .img img {
@@ -404,6 +411,12 @@
   .favorites-card__description {
     margin: 1rem auto 10rem;
     width: 28rem;
+  }
+  .favorites-card__apparel {
+    flex-direction: column;
+  }
+  .favorites-card__basics {
+    flex-direction: column;
   }
 }
 @media (max-width: 1250px) and (max-width: 1080px) and (max-width: 964px) and (max-width: 505px) {
@@ -458,7 +471,7 @@
     background: #ddd;
   }
   .favorites-card__description {
-    margin: 1rem auto 10rem;
+    margin: 1rem auto 1rem;
     width: 15rem;
   }
 }
@@ -911,6 +924,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 8.875rem;
   background-image: url("../img/Banner1.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 33.875rem;
 }
@@ -919,6 +933,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 8.875rem;
   background-image: url("../img/Banner2.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 33.875rem;
 }
@@ -927,6 +942,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 8.875rem;
   background-image: url("../img/Banner3.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 33.875rem;
 }

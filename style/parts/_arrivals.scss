@@ -6,11 +6,11 @@
 		font-weight: 400;
 	}
 	p {
-		margin-top: 1.3rem;
+		margin-top: $gap + 0.3rem;
 		text-align: center;
 	}
 	&-btn {
-		margin-top: 1.3rem;
+		margin-top: $gap + 0.3rem;
 		display: flex;
 		justify-content: center;
 		.btn {
@@ -26,7 +26,7 @@
 		.slider {
 			padding-left: $gap;
 			padding-right: $gap;
-			margin-top: 1.5rem;
+			margin-top: $gap + 0.5rem;
 			&-item {
 				.img {
 					position: relative;
@@ -35,7 +35,7 @@
 					}
 				}
 				.overlay {
-					transition: .3s ease;
+					transition: $transition;
 					position: absolute;
 					top: 45%;
 					left: 25%;
@@ -45,8 +45,8 @@
 					}
 				}
 				h4 {
-					font-size: 1.5rem;
-					margin-top: 1rem;
+					font-size: $gap + 0.5rem;
+					margin-top: $gap;
 				}
 			}
 			.owl-dots {
