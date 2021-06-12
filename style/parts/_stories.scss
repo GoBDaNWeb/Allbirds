@@ -15,6 +15,7 @@
 		display: flex;
 		justify-content: center;
 		margin-top: 1.6rem;
+		padding: 0 $half-gap $gap $half-gap;
 		.btn {
 			@include button($gap, 2.8rem, #212a2f, #495155);
 		}

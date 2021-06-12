@@ -36,13 +36,15 @@
   }
   .btn-burger {
     width: 2rem;
-    position: relative;
+    height: 2.3rem;
     display: none;
     .burger {
       width: 2rem;
       height: 3px;
       background: #000;
       transition: .2s ease;
+      position: absolute;
+      top: 16px;
       &:before {
         content: '';
         width: 2rem;

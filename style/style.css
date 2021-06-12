@@ -35,7 +35,7 @@
 }
 .header .btn-burger {
   width: 2rem;
-  position: relative;
+  height: 2.3rem;
   display: none;
 }
 .header .btn-burger .burger {
@@ -43,6 +43,8 @@
   height: 3px;
   background: #000;
   transition: 0.2s ease;
+  position: absolute;
+  top: 16px;
 }
 .header .btn-burger .burger:before {
   content: "";
@@ -108,7 +110,7 @@
 }
 .hero-btn {
   margin-top: 12.8rem;
-  padding-bottom: 1rem;
+  padding: 0 0.5rem 1rem 0.5rem;
   display: flex;
   justify-content: center;
 }
@@ -476,6 +478,7 @@
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  padding: 0 0.5rem 1rem 0.5rem;
 }
 .category-btn .btn {
   user-select: none;
@@ -661,6 +664,7 @@
   display: flex;
   justify-content: center;
   margin-top: 1.6rem;
+  padding: 0 0.5rem 1rem 0.5rem;
 }
 .stories-btn .btn {
   user-select: none;
@@ -852,8 +856,29 @@
   .footer-certified__item > p {
     max-width: 10rem;
   }
-  .footer-certified__item {
+  .footer-certified__item.country {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 4rem;
+  }
+  .footer-copyright p {
+    text-align: center;
+  }
+}
+@media (max-width: 770px) and (max-width: 590px) {
+  .footer-input p {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-input form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-input form input {
+    margin-bottom: 1rem;
   }
 }
 * {
@@ -919,6 +944,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .body-overlay.active {
   background: rgba(0, 0, 0, 0.5);
+  pointer-events: all;
 }
 
 .phone-menu {

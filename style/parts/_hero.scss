@@ -20,7 +20,7 @@
   }
   &-btn {
     margin-top: 12.8rem;
-    padding-bottom: 1rem;
+    padding: 0 $half-gap $gap $half-gap;
     display: flex;
     justify-content: center;
     .btn {
